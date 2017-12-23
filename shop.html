@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<link rel="stylesheet" href="css/css.css" type="text/css">
+	<title>Document</title>
+<style>
+li{list-style:none;}
+body{background:url(images/bnet-background-1024-978955a5d8.jpg) no-repeat -1200px 0;background-size: 200%;height: 1600px;}	
+header{width: 100%;height: 100px;}
+header img{width: 110%;height: 100px;margin-top:10px;}
+header li{width: 10%;height: 100px;font-size:20px;text-align:center;color:#fff;font-weight:bold;line-height:100px;float:left;}
+header li.kfh{margin-left:28%;}
+header li:hover{color:#000;}
+
+#box{width: 99%; height: 420px;margin:0 auto 0; position: relative;margin-left:0.5%;}
+	#box #img1{width:100%; height: 420px;}
+	#box a{width: 50px; height: 100px; background:rgba(255,255,255,0.4); line-height: 40px;  position:absolute; top:160px; font-weight: bold; font-size:20px; color:#ccc;text-align: center;line-height:100px;}
+	#box a:hover{color:#fff;}
+	#box a#prev{left:10px; }
+	#box a#next{right:10px;}
+	#box strong , #box p{width: 100%; height: 30px; line-height:30px; background: #000; color:#fff;  filter:alpha(opacity:80);background:rgba(0,0,0,0.5);text-align:center;}
+	#box strong{position:absolute; left:0; top:0;}
+	#box p{position:absolute; left:0; bottom:0;}
+section ul.gm1{width: 16%;height: 550px;margin-left:5%;margin-top:30px;}
+section ul.gm1 li{width: 100%;height: 48px;font-size:20px;color:#fff;}
+section ul.gm1 li p{text-align: center;line-height:48px;}
+section ul.gm1 li:hover{opacity:0.6;background:grey;transition:0.6;border-left:4px solid #ccc;}
+#waw{width: 15%;height: 300px;margin-left:5%;}
+#waw li{margin-bottom:20px;}
+#waw li img{width: 100%;height: 150px;background: url(images/gear-landing-8eb3b17ab6.jpg) no-repeat;transition: 0.6s;}
+#waw li img:hover{opacity:0.6;transition: 0.6s;transform: rotateY(90deg);}
+#waw a{font-size:18px;line-height:30px;margin-top:20px;color:#fff;}
+#waw li:hover a{color:#f00;}
+#list{margin-left:25%;background:url(images/box-body-top.gif) no-repeat;background-size:500%;height: 1100px;width:70%;border-redius:8px;width:70%;margin-top:-840px;}
+#list a{color:#ededed;font-size:18px;}
+#list li{width: 24%;float:left;margin-left:1%;margin-top:12px;height: 240px;}
+#list li img{width: 100%;height: 180px;}
+#list li img:hover{opacity:0.3;transition:1.2s;}
+footer{width: 100%;height: 300px;background:url(images/box-body-top.gif) no-repeat 0 -200px;background-size:400%;poition:relative;margin-top:40px;}
+footer li.nac{width:100%;height: 60px;text-align:center;padding-top:50px;}
+footer ul.nac2{margin-left:20%;width:100%;}
+footer ul.nac2 li.nac1{width:10%;height: 20px;font-size:10px;float:left;text-align:center;line-height:20px;}
+footer ul.nac2 li.nac1:hover{color:#fff;}
+footer li.nac3{width:100%;height: 60px;margin-top:50px;text-align:center;line-height:30px;}
+footer li.nac4{width:100%;height: 60px;margin-top:20px;text-align:center;line-height:30px;}
+footer li.nac4 option{border:none;}
+footer li.nav5{margin-top:-150px;margin-left:70%;}
+</style>	
+</head>
+<body>
+<header>
+<a href="index.html"><li><img src="images/card-legacy-games-d7f8ba2841.png" /></li></a>
+<a href="#"><li>遊戯∧</li></a>
+<a href="#"><li>商店</li></a>
+<a href="#"><li>最新殽息</li></a>
+<a href="#"><li>電子竸戟∧</li></a>
+<a href="#"><li class="kfh">客服支援</li></a>
+<a href="#"><li>我的帳号</li></a>
+
+</header>
+<div id="box">
+	<a id="prev" href="javascript:void;">&lt;</a>
+	<a id="next" href="javascript:void;">&gt;</a>
+	<p id="p1">守望先锋:英雄加入,快来挑战高端竞技游戏</p>
+	
+	<img src="images/80c8214a5bfdf631d137d9ad053c946f-4.png" id="img1" />
+</div>	
+
+<script>
+var prev=document.getElementById("prev");
+var next=document.getElementById("next");
+var oImg=document.getElementById("img1");
+var oStrong=document.getElementById("strong1");
+var oP=document.getElementById("p1");
+
+var arrUrl=["images/80c8214a5bfdf631d137d9ad053c946f-4.png",
+            "images/7F0CB407A1AA0F193525C05F4CE1C2E1CACA6688.jpg",
+            "images/2074270a176194ba0faecc00ef7661b6-wow-shadow-product.jpg",
+            "images/0cb849f5f3a9a35ff39b96352a9bcc5d-product-card-latest-expansion-zhTW.jpg"];
+var arrText=["守望先锋:英雄加入,快来挑战高端竞技游戏",
+             "魔兽世界:加入英雄种族神魔人共闯天下",
+             "阿狸:看我可爱吗?我可以给你增加空间呢,388RMB带回家",
+             "冰封王座:最新资料卡片"];
+
+var num=0; //数组下标
+
+//左侧切换
+prev.onclick=function(){
+	num--;
+	if(num==-1){
+		num=arrUrl.length-1;
+	}
+
+	
+	oImg.src=arrUrl[num];//图片切换
+	oP.innerHTML=arrText[num];//图片信息
+}
+
+
+//右侧切换
+next.onclick=function(){
+	num++;
+	if(num==arrUrl.length){
+		num=0;
+	}
+	
+	oImg.src=arrUrl[num];//图片切换
+	oP.innerHTML=arrText[num];//图片信息
+}
+
+</script>
+
+<section>
+<ul class="gm1">
+<a href=""><li style="background:url(images/logo-d3-ab08e4045fed09ee.png) no-repeat;background-size: 22%;"><p>《暗黑破坏神Ⅲ》</p></li></a>
+<a href=""><li style="background:url(images/logo-heroes-78cae505b7a524fb.png) no-repeat;background-size: 22%;"><p>《暴雪英霸》</p></li></a>
+<a href=""><li style="background:url(images/logo-hs-beb1a37bc84beefb.png) no-repeat;background-size: 22%; "><p>《炉石传说》</p></li></a>
+<a href=""><li style="background:url(images/logo-ow-1dd54d69712651a9.png) no-repeat;background-size: 22%; "><p>《守望先锋》</p></li></a>
+<a href=""><li style="background:url(images/logo-sc2-6e33583ba0547b6a.png) no-repeat;background-size: 22%; "><p>《星海争霸Ⅱ》</p></li></a>
+<a href=""><li style="background:url(images/logo-scr-fef4f892c20f584c.png) no-repeat;background-size: 22%; "><p>《星海争霸》</p></li></a>
+<a href=""><li style="background:url(images/logo-wow-3dd2cfe06df74407.png) no-repeat;background-size: 22%; "><p>《魔兽世界》</p></li></a>
+<a href=""><li style="background:url(images/logo-heroes-78cae505b7a524fb.png) no-repeat;background-size: 22%;"><p>《暴雪英霸》</p></li></a>
+<a href=""><li style="background:url(images/logo-hs-beb1a37bc84beefb.png) no-repeat;background-size: 22%; "><p>《炉石传说》</p></li></a>
+<a href=""><li style="background:url(images/logo-ow-1dd54d69712651a9.png) no-repeat;background-size: 22%; "><p>《守望先锋》</p></li></a>
+<a href=""><li style="background:url(images/logo-sc2-6e33583ba0547b6a.png) no-repeat;background-size: 22%; "><p>《星海争霸Ⅱ》</p></li></a>
+</ul>	
+</section>
+<div id="waw">
+<ul>
+<li><img src="images/gear-landing-8eb3b17ab6.jpg" /></li>
+<li><a href="#">史诗宝物等你来拿<br />海量公仔,珍品衣服,更多点券</a></li>
+</ul>	
+</div>
+<div id="list"><ul></ul></div>
+<script>
+	var pics=["images/2074270a176194ba0faecc00ef7661b6-wow-shadow-product.jpg",
+	          "images/ad2340317763d3734887159f9d02f1e3-sc2-war-chest-product.jpg",
+	          "images/b1ccebc502ede3d6b8edcd9fe02f9949-wow-bundle-twilight-luminous-starseeker-product.jpg",
+	          "images/ca62bb898f8db27ba510e90327d07556-scr-product-card-tw.jpg",
+	          "images/card-diablo-tw-a4fdd6ac4b.png",
+	          "images/card-hearthstone-tw-a71e375e53.png",
+	          "images/card-heroes-tw-1d2ab54889 (1).png",
+	          "images/card-overwatch-tw-6a0daf5292.png",
+	          "images/card-starcraft-remastered-tw-05137479c5.png",
+	          "images/card-wow-tw-6687632627.png",
+	          "images/DA735D15AA45B9BA6F2A52A4C35F9806ADC1D05E.jpg",
+	          "images/esports-sc2-32be849895ec4e7d.png",
+	          "images/esports-wowwc-58e045d40f48c7b0.png",
+	          "images/f9b948639dd3f4c1379a2deccad5903f-product_card.png",
+	          "images/f22e9fda17cf58c71146a39bb8a7169a-d3-necromancer-product.jpg",
+	          "images/card-overwatch-tw-6a0daf5292.png"]
+	var con=["战网周年庆:100%好礼相送,充值即可抽取神秘奖品",
+	         "战网周年庆:100%好礼相送,充值即可抽取神秘奖品",
+	         "战网周年庆:100%好礼相送,充值即可抽取神秘奖品",
+	         "战网周年庆:100%好礼相送,充值即可抽取神秘奖品",
+	         "战网周年庆:100%好礼相送,充值即可抽取神秘奖品",
+	         "战网周年庆:100%好礼相送,充值即可抽取神秘奖品",
+	         "战网周年庆:100%好礼相送,充值即可抽取神秘奖品",
+	         "战网周年庆:100%好礼相送,充值即可抽取神秘奖品",
+	         "战网周年庆:100%好礼相送,充值即可抽取神秘奖品",
+	         "战网周年庆:100%好礼相送,充值即可抽取神秘奖品",
+	         "战网周年庆:100%好礼相送,充值即可抽取神秘奖品",
+	         "战网周年庆:100%好礼相送,充值即可抽取神秘奖品",
+	         "战网周年庆:100%好礼相送,充值即可抽取神秘奖品",
+	         "战网周年庆:100%好礼相送,充值即可抽取神秘奖品",
+	         "战网周年庆:100%好礼相送,充值即可抽取神秘奖品",
+	         "战网周年庆:100%好礼相送,充值即可抽取神秘奖品",]
+	var oDiv=document.getElementById("list");
+    var oUl=oDiv.getElementsByTagName("ul");
+
+    for(var i=0; i<pics.length; i++){
+    	oUl[0].innerHTML +='<a href=""><li><img src="'+pics[i]+'" />'
+    	+con[i]+'</li></a>';
+    }
+</script>
+<footer>
+<a href="#"><li class="nac"><img src="images/logo-blizzard.gif" /></li></a>	
+<ul class="nac2">
+<a href="#"><li class="nac1">Press</li></a>	
+<a href="#"><li class="nac1">Career Opportunities</li></a>	
+<a href="#"><li class="nac1">Privacy Policy</li></a>	
+<a href="#"><li class="nac1">Legal Documentation </li></a>	
+<a href="#"><li class="nac1">Contact Us</li></a>	
+<a href="#"><li class="nac1">Sitemap</li></a>
+</ul>
+<li class="nac3"><p>All trademarks referenced herein are the properties of their respective owners.<br />
+	©2017 Blizzard Entertainment, Inc. All rights reserved.</p></li>
+<li class="nac4">languages:
+<select>
+	<option>Chinese</option>
+	<option>English</option>
+	<option>Japanese</option>
+	<option>American</option>
+	<option>Franch</option>
+	<option>Italian</option>
+	<option>Thaileng</option>
+</select>
+</li>	
+<li class="nav5"><img src="images/rating-esrb-pendingtomature.gif" /></li>
+</footer>
+</body>
+</html>

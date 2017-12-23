@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/css.css" type="text/css">
+	<title>Document</title>
+<style>
+li{list-style:none;}
+body{position:relative;}
+header{width: 100%;}
+header li.logo{width: 90%;height: 80px;padding-left:10%;background:url(images/bg-subpage.jpg) no-repeat -700px 0;padding-top:20px;}
+header li.car{color:#fff;font-weight:bold;font-size:32px;font-family:"微软雅黑";margin-left:20%;margin-top:-60px;}
+header ul.zw{width: 92%;height: 52px;padding-left:8%;background:url(images/box-top.jpg) no-repeat;margin-top:40px;background-size: 150%;}
+header ul.zw li{color:#fff;width:10%;height: 50px;text-align: center;line-height:50px;float:left;font-size:20px;margin-right:4%;}
+header ul.zw li:hover{opacity:0.7;}
+header video{width: 100%;}
+header li.cre{font-size:80px;width: 100%;height: 100px;text-align:center;line-height:100px;position:absolute;top:210px;font-weight:bold;color:#fff;}
+header li.joi{font-size:40px;width: 100%;height: 100px;text-align:center;line-height:100px;position:absolute;top:300px;font-weight:bold;color:#fff;}
+header li.vie{width: 20%;height: 56px;margin-left:40%;font-size:24px;text-align:center;line-height:56px;position:absolute;top:460px;font-weight:bold;background:url(images/nav-bar.gif) no-repeat -5px 0;background-size: 250%; color:#fff;}
+header li.vie:hover{background:url(images/nav-bar.gif) no-repeat -25px -83px;}
+section{margin-top:-6px;width: 100%;height: 300px;background:url(images/careers-landing_intro-bg-base-08bb27237c5e45f0149de6e2a9cc3c9dd485a07f060019d78bf1eaa42e7a4664c396c2eff024696c702c3bb020c5546bb9089118c938a1ef1d1a6104225be3de.jpg) 50% 0;}
+section li p{width: 76%;height: 120px;margin-left:12%;font-size:18px;color:#fff;line-height:40px;text-align:center;padding-top:90px;font-family:"微软雅黑";}
+aside{width: 100%;height:810px;background:url(images/careers-landing_intro-bg-lrg-4cd0403873c9bf7d5551aab51a6e94a5f585f945d30a1d891c730fa5bbda021f1c0287923738ce98c47c5e951e85c468adcc10a24977ffbf59ca1918f94add28.jpg);}
+aside ul.one{width: 90%;height: 260px;margin-left:5%;border:1px solid ;}
+aside ul.one:hover{border:1px solid blue;transition:1s;}
+aside ul.one li{float:left;}
+aside ul.one li.two{width: 30%;height: 220px;margin-top:40px;padding-left:2%;font-size:22px;}
+aside ul.one li.two span{padding-top:40px;font-size:26px;font-weight:bold;color:#fff;line-height:36px;}
+aside ul.one li.thr{width: 68%;height: 260px;overflow: hidden;}
+aside ul.one li.thr img{margin-top:-220px;}
+
+
+#list1{margin-left:5%;background:url(images/box-body-top.gif) no-repeat;background-size:500%;height: 410px;width:90%;}
+
+#list1 li{width: 32%;float:left;margin-left:1%;margin-top:12px;height: 380px;font-size:16px;border:1px solid ;}
+#list1 li:hover{border:1px solid blue;overflow:hidden;}
+#list1 li a{color:#ededed;margin-left:6%;}
+#list1 li span{color:#fff;font-size:20px;font-weight:bold;line-height:60px;margin-left:6%;}
+#list1 li img{width: 100%;height: 220px;}
+#list1 li img:hover{opacity:0.3;transition:1.2s;}
+aside li.jiao{margin-left:29.7%;margin-top:94px;}
+nav{width: 100%;height: 1030px;background:url(images/landing-roles-lg-4e19862ceb910818aa4f8aaf91f7bd4d1ca70f26d3491ed0d5239f2e8325a9037705a673ad6da73bace7a33be4e83aead8a97b543bc1692709dcb7c8a301a336.jpg) no-repeat -560px 0;}
+nav ul{padding-top:114px;width:45%;height: 630px;margin-left:55%;}
+nav li{width: 90%;height: 90px;border-bottom:1px solid grey;color:#fff;line-height:90px;font-size:20px;padding-left:5%;}
+
+nav li span{float:right; color:grey;font-size:18px;}
+nav li:hover{opacity:0.6;background:grey;transition:1s;}
+nav li:hover span{color:#fff;}
+#jiao1{width: 100%;height: 50px;}
+#jiao1 li{margin-left:26.3%;}
+#lea{width: 100%;height: 460px;background: url(images/background-inverse-ice-782a4077912d3cddcc133be4c0f39120d8ed7b20e6bba2acbd09f16cc3b679e4c6be556956db5c6514c85ef7422d8586519c116906f9c19ad76a32beb5e84f7d.jpg);margin-top:-50px;}
+#lea li.lea1{width: 100%;height: 120px;font-size:40px;text-align:center;line-height:150px;color:#000;font-family:"微软雅黑";}
+#list2{margin-left:5%;background:url(images/box-body-top.gif) no-repeat;background-size:500%;height: 320px;width:90%;}
+
+#list2 li{width: 32%;float:left;margin-left:1%;margin-top:12px;height: 300px;font-size:20px;border:1px solid ;text-align:center;font-weight:bold;}
+#list2 li:hover{border:1px solid blue;overflow:hidden;transition:1s;}
+#list2 li:hover a{color:blue;transition:1s;}
+#list2 li a{color:#ededed;margin-left:6%;line-height:100px;}
+#list2 li img{width: 100%;height: 220px;}
+footer{width: 100%;height: 300px;background:url(images/careers-footer-bg-lg-1ef544513bc161835a4bb721dbde4e1b85ab57f05ddf45ececa5f68aee53273b941f2b3d3a87bf79ed16a39a84e27fe4e056f8f2396dad93d8d41f1ead4b0f63.jpg) no-repeat -200px -150px;poition:relative;}
+footer li.nac{width:100%;height: 60px;text-align:center;padding-top:50px;}
+footer ul.nac2{margin-left:20%;width:100%;}
+footer ul.nac2 li.nac1{width:10%;height: 20px;font-size:10px;float:left;text-align:center;line-height:20px;color:grey;}
+footer ul.nac2 li.nac1:hover{color:#fff;}
+footer li.nac3{width:100%;height: 60px;margin-top:50px;text-align:center;line-height:30px;}
+footer li.nac4{width:100%;height: 60px;margin-top:20px;text-align:center;line-height:30px;}
+footer li.nac4 option{border:none;}
+footer li.nav5{margin-top:-150px;margin-left:70%;}
+</style>	
+</head>
+<body>
+<header>
+
+<a href="index.html"><li class="logo"><img src="images/logo-blizzard.gif" /></li></a>
+<a href="#"><li class="car">CAREERS</li></a>
+<ul class="zw">
+<a href="#"><li>Careers</li></a>
+<a href="#"><li>Job Openings</li></a>
+<a href="#"><li>Disciplines</li></a>
+<a href="#"><li>Locations</li></a>
+<a href="#"><li>Students</li></a>
+</ul>
+
+<video autoplay="autoplay" loop="loop" muted="muted" preload="preload" webkit-playsinline="true" poster="https://blzcareers-a.akamaihd.net/components/VideoPane/VideoPane-poster-86a3a2878d8c03557a2f699dcce439c57e1641eb5c317cf499758e851e818acbe0ed891adc14d4ddb8ccfe5713be74f9a42e4c87d7caf7bcd0762c31b1828619.png" class="VideoPane-video hide show-sm"><source src="https://bnetcmsus-a.akamaihd.net/cms/template_resource/tb/TB4V12JSZ6WS1480457015835.webm" type="video/webm"><source src="https://bnetcmsus-a.akamaihd.net/cms/template_resource/na/NALC4H6RZLNW1480456934218.mp4" type="video/mp4"></video>
+<source src="https://bnetcmsus-a.akamaihd.net/cms/template_resource/tb/TB4V12JSZ6WS1480457015835.webm" type="video/webm">
+<source src="https://bnetcmsus-a.akamaihd.net/cms/template_resource/na/NALC4H6RZLNW1480456934218.mp4" type="video/mp4">
+</video>
+
+<li class="cre">CREAT WORLDS</li>
+<li class="joi">Join Blizzard and entertain the universe.</li>
+<a href="#"><li class="vie">View Job Openings</li></a>
+</header>
+
+<section>
+<li><p>We’re on a quest: bring our dreams to life and craft the most epic entertainment experiences, ever. Hard work,<br /> iteration and polish go into the Blizzard “secret recipe,” but the most important ingredients come from talented<br /> people who share our vision. If that sounds like you, join us.</p></li>	
+</section>
+
+<aside>
+	<ul class="one">
+		<li class="two">article<br /><br /><span>WE'RE PROUD TO BE ONE OF FORTUNE'S 100 BEST COMPANIES TO WORK FOR!</span></li>
+		<li class="thr"><img src="images/G9LH6XNAAG3L1491936974337.jpg" /></li>
+	</ul>
+
+
+<div id="list1"><ul></ul></div>
+	
+<script>
+	var pics=["images/LWB447B7EUXI1492798542434.jpg","images/OVRVEC0YPVEP1480704906624.jpg","images/PGIVXV92UK6I1480641404477.jpg"]
+	var con=["video<br /><span>EVER WONDER WHY WE LOVE TO CALL &nbsp;ORANGE COUNTY HOME?</span>",
+	         "article<br /><span>ARMOR UP,CHECK OUT OUR EMPLOYEE &nbsp;SERVICE AWARDS</span>",
+	         "video<br /><span>CELEBRATE 25 YEARS WITH BLIZZARD &nbsp;ENTERTHAIMENT</span>"]
+    var oDiv=document.getElementById("list1");
+    var oUl=oDiv.getElementsByTagName("ul");
+
+    for(var i=0; i<pics.length; i++){
+    	oUl[0].innerHTML +='<li><img src="'+pics[i]+'" /><a href="#">'
+    	+con[i]+'</a></li>';
+        }
+</script>
+<li class="jiao"><img src="images/landing-roles-top-0b0ac00f00c9f5df7c5b7b0f978c0cdb5eda649a2f2651abcab72ef2dc325a2aca781f986fafd0c544c96e3f1421f050d6e512e7e1fba5bdb72f4da3bb876d88.png" /></li>  
+</aside>
+ 	
+
+<nav>
+<ul>
+<a href="#"><li>Administration<span>6jobs&nbsp;></span></li></a>
+    <a href="#"><li>Art,Animation & Sound<span>23jobs&nbsp;></span></li></a>
+	<a href="#"><li>Business Operations<span>36jobs&nbsp;></span></li></a>
+	<a href="#"><li>Community,Marketing & Communcations<span>55jobs&nbsp;></span></li></a>
+	<a href="#"><li>Designs<span>12jobs&nbsp;></span></li></a>
+	<a href="#"><li>Engineerngs & Techology<span>88jobs&nbsp;></span></li></a>
+	<a href="#"><li>Esports & Broadcasting<span>30jobs&nbsp;></span></li></a>
+	<a href="#"><li>Production,Program & Project Management<span>33jobs&nbsp;></span></li></a>
+	<a href="#"><li>Q/A localization & cs<span>21jobs&nbsp;></span></li></a>
+</ul>	
+</nav>
+<div id="jiao1">
+	<li><img src="images/landing-roles-bottom-a9aca87b285f1466c7dd1dbc9d643af3abeee5602c432e9920b431b9e4656a9efac7a98ac82687c82a0928250892eff5d708ee8c88afdbd72d3b742bc1e6fe35.png" /></li>
+</div>
+<div id="lea">
+	<li class="lea1">Learn about working at Blizzard:</li>
+
+<div id="list2"><ul></ul></div>	
+<script>
+	var pics=["images/AWCQLTSQUVC81475598073559.jpg",
+	          "images/landing-fallback_base-bc8b4c36ec7df90fb405e5d2e241ddfef2c230ad4c00a6da05cd819c3d24cf89edab46910e9a0d173c4ea6e1c997e02dee2da2a4303f5e689993c94528ff3b8e.jpg",
+	          "images/company-careers.jpg"]
+	var con=["DISCIPLINES >","LOCATIONS >","STUDENTS PROGRAMS >"]
+    var oDiv=document.getElementById("list2");
+    var oUl=oDiv.getElementsByTagName("ul");
+
+    for(var i=0; i<pics.length; i++){
+    	oUl[0].innerHTML +='<li><img src="'+pics[i]+'" /><a href="#">'
+    	+con[i]+'</a></li>';
+        }
+</script>
+</div>
+<footer>
+<a href="#"><li class="nac"><img src="images/logo-blizzard.gif" /></li></a>	
+<ul class="nac2">
+<a href="#"><li class="nac1">Press</li></a>	
+<a href="#"><li class="nac1">Career Opportunities</li></a>	
+<a href="#"><li class="nac1">Privacy Policy</li></a>	
+<a href="#"><li class="nac1">Legal Documentation </li></a>	
+<a href="#"><li class="nac1">Contact Us</li></a>	
+<a href="#"><li class="nac1">Sitemap</li></a>
+</ul>
+<li class="nac3">All trademarks referenced herein are the properties of their respective owners.<br />
+©2017 Blizzard Entertainment, Inc. All rights reserved.</li>
+<li class="nac4">languages:
+<select>
+	<option>Chinese</option>
+	<option>English</option>
+	<option>Japanese</option>
+	<option>American</option>
+	<option>Franch</option>
+	<option>Italian</option>
+	<option>Thaileng</option>
+</select>
+</li>	
+<li class="nav5"><img src="images/rating-esrb-pendingtomature.gif" /></li>
+</footer>
+
+</body>
+</html>

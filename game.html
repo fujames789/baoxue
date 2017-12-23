@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/css.css" type="text/css">
+	<title>Document</title>
+<style>
+li{list-style:none;}
+body{background:url(images/games-bg.jpg) no-repeat -360px 0;background-size: 200%;height:1960px;}	
+header{width:100%;height:200px;}
+header ul.bxwx{width: 70%;height:118px;margin-left:15%;padding-top:25px;background:url(images/nav-bg.png) no-repeat -7px 18px;}
+header ul.bxwx li{width:15.6%;height: 70%;float:right;margin-top:35px;line-height: 130px;font-size:18px;text-align: right;color:#fff;}
+header ul.bxwx li.gm{background:url(images/nav-bar.gif) no-repeat -3px 0;}
+header ul.bxwx li.gm:hover{background:url(images/nav-bar.gif) no-repeat -3px -82px;}
+header ul.bxwx li.cm{background:url(images/nav-bar.gif) no-repeat 25% 0;}
+header ul.bxwx li.cm:hover{background:url(images/nav-bar.gif) no-repeat 25% -82px;}
+header ul.bxwx li.cr{background:url(images/nav-bar.gif) no-repeat 50% 0;}
+header ul.bxwx li.cr:hover{background:url(images/nav-bar.gif) no-repeat 50% -82px;}
+header ul.bxwx li.su{background:url(images/nav-bar.gif) no-repeat 75% 0;}
+header ul.bxwx li.su:hover{background:url(images/nav-bar.gif) no-repeat 75% -82px;}
+header ul.bxwx li.sh{background:url(images/nav-bar.gif) no-repeat 75% -1px;}
+header ul.bxwx li.sh:hover{background:url(images/nav-bar.gif) no-repeat 75% -83px;}
+section p.yx{width: 70%;margin-left:15%;font-size:40px;color:#ededed;}
+section li.yx1{width: 70%;height: 40px;line-height:40px;margin-left:15%;font-size:18px;color:#ededed;background:url(images/box-top.jpg) no-repeat;margin-top:10px;border:1px solid #000;border-radius: 8px;}
+#list{margin-left:15%;background:url(images/box-body-top.gif) no-repeat;background-size:500%;height: 570px;width:70%;}
+#list a{color:#ededed;}
+#list li{width: 32%;float:left;margin-right:1%;margin-top:12px;height: 265px;}
+#list li img:hover{opacity:0.3;transition:1.2s;}
+nav li.yx2{width: 70%;height: 40px;line-height:40px;margin-left:15%;font-size:18px;color:#ededed;background:url(images/box-top.jpg) no-repeat;margin-top:30px;border:1px solid #000;border-radius: 8px;}
+#list1{margin-left:15%;background:url(images/box-body-top.gif) no-repeat;background-size:500%;height: 740px;width:70%;}
+
+#list1 li{width: 32%;float:left;margin-right:1%;margin-top:12px;height: 136px;}
+#list1 li img:hover{opacity:0.3;transition:1.2s;}
+
+footer{width: 100%;height: 300px;background:url(images/box-body-top.gif) no-repeat 0 -200px;background-size:400%;poition:relative;margin-top:40px;}
+footer li.nac{width:100%;height: 60px;text-align:center;padding-top:50px;}
+footer ul.nac2{margin-left:20%;width:100%;}
+footer ul.nac2 li.nac1{width:10%;height: 20px;font-size:10px;float:left;text-align:center;line-height:20px;}
+footer ul.nac2 li.nac1:hover{color:#fff;}
+footer li.nac3{width:100%;height: 60px;margin-top:50px;text-align:center;line-height:30px;}
+footer li.nac4{width:100%;height: 60px;margin-top:20px;text-align:center;line-height:30px;}
+footer li.nac4 option{border:none;}
+footer li.nav5{margin-top:-150px;margin-left:70%;}
+</style>	
+</head>
+<body>
+<header>
+<ul class="bxwx">
+    <a href="shop.html"><li class="sh">SHOP</li></a>
+    <a href="support.html"><li class="su">SUPPORT</li></a>
+    <a href="careers.html"><li class="cr">CAREERS</li></a>
+    <a href="company.html"><li class="cm">COMPANY</li></a>
+    <a href="#"><li class="gm">GAMES</li></a>	
+</ul>	
+</header>
+<section>
+<p class="yx">GAMES</p>	
+<li class="yx1">RECENTLY RELEASED</li>
+</section>	
+<div id="list"><ul></ul></div>
+<script>
+	var pics=["images/gamecard-games-legion.jpg","images/gamecard-games-overwatch.jpg","images/gamecard-games-lotv.jpg","images/gamecard-games-heroes.jpg","images/hearthstone.jpg"]
+	var con=["World of Warcraft's newest expansion set pits Azeroth’s heroes against the Burning Legion. The demonic horrors are intent on summoning the Dark Titan Sargeras—and they’ve already located the key to his return","Overwatch. An international task force that maintained peace for a generation before it was shut down. Now in the wake of its dismantling, global conflict is rising. Overwatch may be gone… but the world still needs heroes.","As Artanis, Hierarch of the mighty protoss race, you are poised to reclaim your fallen homeworld—Aiur—from the zerg Swarm, but an ancient evil looms. Only you can unite your people and oppose the coming darkness before it consumes the galaxy","Powerful warriors from Azeroth, Sanctuary, the Koprulu sector, and beyond have been sucked into the Nexus, a transdimensional storm. Stranded in a strange limbo of clashing universes, these heroes have but one fate—endless battle for glory, survival, and just plain fun.","Deceptively simple, yet insanely fun - welcome to Hearthstone, the free strategy card game for everyone. Play your cards to sling spells, summon creatures, and command the heroes of Warcraft to outwit your opponents in this game of awesome strategy!"]
+	var oDiv=document.getElementById("list");
+    var oUl=oDiv.getElementsByTagName("ul");
+
+    for(var i=0; i<pics.length; i++){
+    	oUl[0].innerHTML +='<a href=""><li><img src="'+pics[i]+'" />p'
+    	+con[i]+'p</li></a>';
+    }
+</script>
+
+<nav>
+<li class="yx2">ALL OTHER GAMES</li>
+</nav>
+<div id="list1"><ul></ul></div>
+<script>
+	var pics=["images/gamecard-games-legion.jpg","images/gamecard-games-overwatch.jpg","images/gamecard-games-lotv.jpg","images/gamecard-games-heroes.jpg","images/hearthstone.jpg","images/gamecard-games-bc.jpg","images/gamecard-games-bc.jpg","images/gamecard-games-cataclysm.jpg","images/gamecard-games-d2.jpg","images/gamecard-games-d3.jpg","images/gamecard-games-d3console.jpg","images/gamecard-games-d3x1.jpg","images/gamecard-games-hots.jpg","images/gamecard-games-mists.jpg","images/gamecard-games-sc2.jpg"]
+	
+	var oDiv=document.getElementById("list1");
+    var oUl=oDiv.getElementsByTagName("ul");
+
+    for(var i=0; i<pics.length; i++){
+    	oUl[0].innerHTML +='<a href=""><li><img src="'+pics[i]+'" /></li></a>';
+    }
+</script>
+<footer>
+<a href="#"><li class="nac"><img src="images/logo-blizzard.gif" /></li></a>	
+<ul class="nac2">
+<a href="#"><li class="nac1">Press</li></a>	
+<a href="#"><li class="nac1">Career Opportunities</li></a>	
+<a href="#"><li class="nac1">Privacy Policy</li></a>	
+<a href="#"><li class="nac1">Legal Documentation </li></a>	
+<a href="#"><li class="nac1">Contact Us</li></a>	
+<a href="#"><li class="nac1">Sitemap</li></a>
+</ul>
+<li class="nac3">All trademarks referenced herein are the properties of their respective owners.<br />
+©2017 Blizzard Entertainment, Inc. All rights reserved.</li>
+<li class="nac4">languages:
+<select>
+	<option>Chinese</option>
+	<option>English</option>
+	<option>Japanese</option>
+	<option>American</option>
+	<option>Franch</option>
+	<option>Italian</option>
+	<option>Thaileng</option>
+</select>
+</li>	
+<li class="nav5"><img src="images/rating-esrb-pendingtomature.gif" /></li>
+</footer>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style>
+*{margin:0;padding:0;}
+#bg{width: 100%;height: 684px;background: #ddd;position:relative;}	
+
+#bg .bgvid{position:absolute;}
+
+</style>	
+</head>
+<body>
+<!--poster:下载图像时未出现用.视频的第一帧作为背景 -->
+<div id="bg">
+	<video poster="video/3in1.jpg" autoplay loop  class="bgvid">
+	<source src="video/3in1.mp4" type="video/mp4" >	
+    <source src="video/3in1.webm" type="video/webm" >	
+
+	</video>
+</div>	
+</body>
+</html>

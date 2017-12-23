@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<div>
+	<input type="checkbox" id="all">全选<br/>
+	<input type="checkbox" name="food" value="烤肉">烤肉
+	<input type="checkbox" name="food" value="锅包肉">锅包肉
+	<input type="checkbox" name="food" value="驴肉">驴肉
+	<input type="checkbox" name="food" value="红烧肉">红烧肉
+	<input type="checkbox" name="food" value="羊肉串">羊肉串
+    <input type="checkbox" name="food" value="小葱拌豆腐">小葱拌豆腐
+</div>
+<script>
+var oAll=document.getElementById("all");
+var oFood=document.getElementsByName("food");	
+
+oAll.onclick=function(){//原理:领操者
+	for(var i=0;i<oFood.length;i++){
+		oFood[i].checked=oAll.checked;
+	}
+}
+
+for(var i=0;i<oFood.length;i++){
+   oFood[i].onclick=function(){//所有的food
+   	var flag=true;
+   	for(var j=0;j<oFood.length;j++){
+      if(oFood[j].checked==false){
+      	flag=false;
+      }
+
+   	}
+   	oAll.checked=flag;//全选项
+   }
+ }
+</script>	
+</body>
+</html>
